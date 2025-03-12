@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Articles General",
+  "behavior": "create",
+  "noteContentFormat": "![thumbnail|200]({{\"link to the main image from the page\"}})\n\n{{content}}",
+  "properties": [
+    {
+      "name": "category",
+      "value": "[[Articles]]",
+      "type": "multitext"
+    },
+    {
+      "name": "type",
+      "value": "{{\\\"Analyze this article and classify it as exactly ONE of these types (respond with ONLY the type name):  Research: Academic journal articles, scientific studies, scholarly papers, conference proceedings, data-driven analysis with methodology, papers with citations and references  News: Factual reporting of current events, journalistic coverage, breaking news, investigative reporting, objective accounts of recent happenings  Opinion: Editorials, commentary, perspective pieces, viewpoints, subjective analysis, articles expressing personal judgment or stance on issues  Reviews: Critical evaluations of products/services/media, literature reviews, critiques, assessments that judge quality or performance  Informational: Educational content, tutorials, how-to guides, explainers, reference materials, articles that primarily aim to teach or inform without bias  If the article combines multiple types, select the PREDOMINANT category based on primary purpose and structure.\\\"|wikilink}}",
+      "type": "multitext"
+    },
+    {
+      "name": "title",
+      "value": "{{\\\"Title of the piece/paper/article only\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "author",
+      "value": "{{\\\"Format each authors name with double square brackets and separate them with commas (e.g. '[[Richard Fidler]], [[Sarah Kanowski]]')\\\"}}",
+      "type": "multitext"
+    },
+    {
+      "name": "genre",
+      "value": "{{\\\"one tag of the main genre area\\\"|split:\\\", \\\"|wikilink|join}}",
+      "type": "multitext"
+    },
+    {
+      "name": "people",
+      "value": "{{\\\"Format three main people names with double square brackets and separate them with commas (e.g. '[[Richard Fidler]], [[Sarah Kanowski]]')\\\"}}",
+      "type": "multitext"
+    },
+    {
+      "name": "publisher",
+      "value": "{{\\\"Name of the research institute, publisher or title of the blog\\\"|wikilink}}",
+      "type": "multitext"
+    },
+    {
+      "name": "published",
+      "value": "{{\\\"Date published displayed as YYYY-MM-DD where possible\\\"}}",
+      "type": "date"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "PDF",
+      "value": "",
+      "type": "text"
+    },
+    {
+      "name": "Identifier",
+      "value": "{{\\\"Only add in one of the following:the full ISBN, DOI, ISSN, PMID. Code it as a https:// link. Nothing else.\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{date|date:\\\"YYYY-MM-DD\\\"}} ",
+      "type": "date"
+    },
+    {
+      "name": "description",
+      "value": "{{\\\"Brief two sentence description of piece\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "value": "clippings",
+      "type": "multitext"
+    },
+    {
+      "name": "citeAPA",
+      "value": "{{\\\"Add in the APA 7 reference style. Professional, exact.\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "citeKey",
+      "value": "{{\\\"Create a cite key, last name of first author first then year published - e.g. O'Brien, 2024\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "image",
+      "value": "{{\\\"link to the main image from the page\\\"}}",
+      "type": "text"
+    }
+  ],
+  "triggers": [],
+  "noteNameFormat": "{{\"Title of the piece/paper/article only\"}}",
+  "path": "Clippings"
+}
