@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Podcasts",
+  "behavior": "create",
+  "noteContentFormat": "![thumbnail|200]({{\"Link to Podcast image URL\"}})\n\n## Episodes\n\n```dataview\ntable without id\n\tlink(file.link, \"Ep. \" + string(episode)) as Episode,\n\ttitle as Title,\n\tguests as Guest,\n\trating as Rating\nwhere\n\tcontains(category,[[Podcast episodes]]) and\n\tcontains(show,this.file.link)\nsort episode desc\n```\n",
+  "properties": [
+    {
+      "name": "category",
+      "value": "[[Podcasts]]",
+      "type": "multitext"
+    },
+    {
+      "name": "title",
+      "value": "{{\\\"Podcast Show name(replace any : / \\ with -)\\\"|split:\\\", \\\"|wikilink|join}}",
+      "type": "text"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "hosts",
+      "value": "{{\\\"Format each host name with double square brackets and separate them with commas (e.g. '[[Richard Fidler]], [[Sarah Kanowski]]')\\\"}}",
+      "type": "multitext"
+    },
+    {
+      "name": "description",
+      "value": "{{\\\"short description of the podcast\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{date}}",
+      "type": "date"
+    },
+    {
+      "name": "tags",
+      "value": "clippings,",
+      "type": "multitext"
+    },
+    {
+      "name": "image",
+      "value": "{{\\\"Link to Podcast image URL\\\"}}",
+      "type": "text"
+    }
+  ],
+  "triggers": [],
+  "noteNameFormat": "{{\"Podcast Show name(replace any : / \\ with -)\"}}",
+  "path": "References"
+}
