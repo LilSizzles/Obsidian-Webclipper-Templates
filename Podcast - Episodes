@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Podcast Episodes",
+  "behavior": "create",
+  "noteContentFormat": "![thumbnail|200]({{\"Link to episode image URL\"}})\n\n# Notes\n",
+  "properties": [
+    {
+      "name": "category",
+      "value": "[[Podcast episodes]]",
+      "type": "multitext"
+    },
+    {
+      "name": "show",
+      "value": "{{\\\"title of the podcast Show (replace any : / \\ with -)\\\"|split:\\\", \\\"|wikilink|join}}",
+      "type": "text"
+    },
+    {
+      "name": "title",
+      "value": "{{\\\"Podcast Episode name - (replace any : / \\ with -) same as other\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "hosts",
+      "value": "{{\\\"Format each host name with double square brackets and separate them with commas (e.g. '[[Richard Fidler]], [[Sarah Kanowski]]')\\\"}}",
+      "type": "multitext"
+    },
+    {
+      "name": "guests",
+      "value": "{{\\\"Format the main podcast guests name with double square brackets and separate them with commas (e.g. '[[Richard Fidler]], [[Sarah Kanowski]]')\\\"}}",
+      "type": "multitext"
+    },
+    {
+      "name": "rating",
+      "value": "",
+      "type": "number"
+    },
+    {
+      "name": "description",
+      "value": "{{\\\"short description of the episode\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "published",
+      "value": "{{\\\"Episode publish date\\\"}}",
+      "type": "date"
+    },
+    {
+      "name": "created",
+      "value": "{{date}}",
+      "type": "date"
+    },
+    {
+      "name": "url",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "episode",
+      "value": "{{\\\"Episode number\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "value": "podcasts, episode",
+      "type": "multitext"
+    },
+    {
+      "name": "image",
+      "value": "{{\\\"Link to episode image URL\\\"}}",
+      "type": "text"
+    }
+  ],
+  "triggers": [
+    "https://podcasts.apple.com/",
+    "https://www.listennotes.com/"
+  ],
+  "noteNameFormat": "{{\"Podcast Episode name(replace any : / \\ with -) same as other\"}}",
+  "path": "Clippings"
+}
