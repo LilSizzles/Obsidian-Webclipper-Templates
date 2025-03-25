@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Read It Later",
+  "behavior": "create",
+  "noteContentFormat": "![thumbnail|200]({{\"link to the main image from the page\"}})\n\n{{content}}",
+  "properties": [
+    {
+      "name": "category",
+      "value": "[[Read It Later]]",
+      "type": "multitext"
+    },
+    {
+      "name": "type",
+      "value": "{{\\\"Analyze this designer/artist and classify them into exactly ONE of these design disciplines (respond with ONLY the single-word tag):  Graphic: Visual communication through print, digital media, typography, layouts, branding, and visual identity  Web: Design focused on websites, responsive interfaces, and web-based user experiences  Interface: User experience and interface design focused on digital products, apps, and interactive systems (UX/UI)  Industrial: Design of physical products, consumer goods, and manufactured items  Interior: Architectural interiors, spatial planning, and environmental design  Fashion: Clothing, accessories, and textile-based wearable items  Illustration: Artistic drawings, digital or traditional art created for commercial or editorial purposes  Photographic: Photographic art, commercial photography, and image-based visual communication  Animation: Moving image design including animation, motion graphics, and video-based design  3D: Three-dimensional modeling, rendering, and visualization including product, architectural, and virtual design  If they work across multiple disciplines, select their PRIMARY or MOST RECOGNIZED area of expertise.\\\", \\\"|wikilink|join}}",
+      "type": "multitext"
+    },
+    {
+      "name": "title",
+      "value": "{{\\\"Title of the piece/paper/article only\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "author",
+      "value": "{{\\\"Format each authors name with double square brackets and separate them with commas (e.g. '[[Richard Fidler]], [[Sarah Kanowski]]')\\\"}}",
+      "type": "multitext"
+    },
+    {
+      "name": "genre",
+      "value": "{{\\\"one tag of the main genre area\\\"|split:\\\", \\\"|wikilink|join}}",
+      "type": "multitext"
+    },
+    {
+      "name": "people",
+      "value": "{{\\\"Format three main people names with double square brackets and separate them with commas (e.g. '[[Richard Fidler]], [[Sarah Kanowski]]')\\\"}}",
+      "type": "multitext"
+    },
+    {
+      "name": "publisher",
+      "value": "{{\\\"Name of the research institute, publisher or title of the blog\\\"|wikilink}}",
+      "type": "multitext"
+    },
+    {
+      "name": "published",
+      "value": "{{\\\"Date published displayed as YYYY-MM-DD where possible\\\"}}",
+      "type": "date"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "PDF",
+      "value": "",
+      "type": "text"
+    },
+    {
+      "name": "Identifier",
+      "value": "{{\\\"Only add in one of the following:the full ISBN, DOI, ISSN, PMID. Code it as a https:// link. Nothing else.\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "created",
+      "value": "{{date|date:\\\"YYYY-MM-DD\\\"}} ",
+      "type": "date"
+    },
+    {
+      "name": "description",
+      "value": "{{\\\"Brief two sentence description of piece\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "value": "clippings",
+      "type": "multitext"
+    },
+    {
+      "name": "citeAPA",
+      "value": "{{\\\"Add in the APA 7 reference style. Professional, exact.\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "citeKey",
+      "value": "{{\\\"Create a cite key, last name of first author first then year published - e.g. O'Brien, 2024\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "image",
+      "value": "{{\\\"link to the main image from the page\\\"}}",
+      "type": "text"
+    }
+  ],
+  "triggers": [],
+  "noteNameFormat": "{{\"Title of the piece/paper/article only\"}}",
+  "path": "Clippings"
+}
